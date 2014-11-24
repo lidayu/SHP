@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="ABC.EQUK.EQUK_ENTRANCE"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="389" d:DesignWidth="592">
+    <Grid Name="RootGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="45" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="45" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+    	<Button  Content="对公业务" Grid.Column="1" HorizontalAlignment="Left" Margin="-35,8,0,8" Grid.Row="2" Width="102"/>
+    	<Button Content="个人业务" Grid.Column="2" Margin="-61,8,8,8" Grid.Row="2"/>
+    	<Button Name="leftButton" Content="《" Grid.Row="1">
+    		<Button.Background>
+    			<LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+    				<LinearGradientBrush.RelativeTransform>
+    					<TransformGroup>
+    						<ScaleTransform CenterY="0.5" CenterX="0.5"/>
+    						<SkewTransform CenterY="0.5" CenterX="0.5"/>
+    						<RotateTransform Angle="-90" CenterY="0.5" CenterX="0.5"/>
+    						<TranslateTransform/>
+    					</TransformGroup>
+    				</LinearGradientBrush.RelativeTransform>
+    				<GradientStop Color="#FFF3F3F3"/>
+    				<GradientStop Color="#FF64FFF4" Offset="1"/>
+    			</LinearGradientBrush>
+    		</Button.Background>
+    	</Button>
+    	<Button Name="rightButton" Content="》" Grid.Column="2" Grid.Row="1" >
+    		<Button.Background>
+    			<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+    				<LinearGradientBrush.RelativeTransform>
+    					<TransformGroup>
+    						<ScaleTransform CenterY="0.5" CenterX="0.5"/>
+    						<SkewTransform CenterY="0.5" CenterX="0.5"/>
+    						<RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+    						<TranslateTransform/>
+    					</TransformGroup>
+    				</LinearGradientBrush.RelativeTransform>
+    				<GradientStop Color="#FFF3F3F3" Offset="0"/>
+    				<GradientStop Color="#FF64FFF4" Offset="1"/>
+    			</LinearGradientBrush>
+    		</Button.Background>
+    	</Button>
+    	<Label Content="中国农业银行  翼柜通" HorizontalAlignment="Left" Margin="9,4,0,4" Width="236" FontSize="21.333" Grid.ColumnSpan="2" />
+        <UniformGrid x:Name="tranGrid" Margin="0,0,0,0" Grid.Row="1" Grid.Column="1">
+
+        </UniformGrid>
+        <Border Name="bdTranLoader" Grid.Row="1" Grid.Column="1">
+            
+            
+        </Border>
+    </Grid>
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>               
+                <ResourceDictionary Source="Resource\Tabitem.xaml"/>               
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+</UserControl>

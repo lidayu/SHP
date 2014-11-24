@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+名称：交易配置信息
+功能：供翼柜通入口交易动态加载已有交易
+创建：李大宇
+日期：2014.11.6
+
+-->
+<Transactions>
+  <TGroup type="company">
+
+    
+  </TGroup>
+  <TGroup type="person">
+    <transaction
+      ID="EQUK_T_LOST"
+      Name="挂失换卡"
+      Image="img\\03挂失业务.png"
+      Command=""
+      Parameter=""
+      />
+
+    <transaction
+      ID="EQUK_T_OPEN"
+      Name="开户开折"
+      Image="img\\01开卡开折.png"
+      Command=""
+      Parameter=""
+      />
+    <transaction
+      ID="EQUK_T_WUSD"
+      Name="西联发汇"
+      Image="img\\07西联发汇.png"
+      Command=""
+      Parameter=""
+      />
+    <transaction
+      ID="EQUK_T_WURV"
+      Name="西联收汇"
+      Image="img\\08西联收汇.png"
+      Command=""
+      Parameter=""
+      />
+    <transaction
+      ID="EQUK_T_JWHK"
+      Name="境外汇款"
+      Image="img\\06境外汇款.png"
+      Command=""
+      Parameter=""
+      />
+    <transaction
+      ID="EQUK_T_GRHD"
+      Name="个人汇兑"
+      Image="img\\02个人汇兑.png"
+      Command=""
+      Parameter=""
+      />
+    <transaction
+      ID="EQUK_T_DZQY"
+      Name="电子签约"
+      Image="img\\04电子银行签约.png"
+      Command=""
+      Parameter=""
+      />
+  </TGroup>
+  
+</Transactions>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+***************************************************************************
+名称：子系统配置文档
+功能：供SHP识别配有的子系统，根据参数加载。
+创建：李大宇
+时间：20141104
+说明：配置时请保证各配置节点的ID唯一，否则SHP平台只识别前面的子系统
+各参数配置格式：
+ID：四位（建议）大写英语字母
+Name：中文，界面显示给用户看的
+Type：CS或者BS
+Core:CS时，为系统组件目录位置，实例EQUK 
+     BS时，为系统采用的内核，小写webkit或者ie
+Command：CS时为：命名空间+类名，之后逗号分隔，然后程序集名称；
+         BS时为目标网址
+Parameter：CS时为构造函数传入参数，格式：arg1,arg2,arg3,...
+           BS时为网址后的请求字符串，格式：userName=李大宇&&ID=4106&&...
+***************************************************************************
+修订：
+时间：
+
+
+
+***************************************************************************
+-->
+<Systems>
+  <SubSys ID="EQUK"
+          Name="翼柜通"
+          Type="CS"
+          Core="EQUK" 
+          Command="ABC.BoEing.Client.CustomerServicePortal.YGTCommand,ABC.BoEing.Client.CustomerServicePortal"          
+          Parameter=""
+          
+          />
+  
+  <SubSys ID="BosTeller"
+        Name="超级柜台"
+        Type="BS"
+        Core="webkit"
+        Command="http://10.233.94.123/index.aspx"
+        Parameter=""
+          
+          />
+
+  <SubSys ID="NetBank"
+        Name="农行网银"
+        Type="BS"
+        Core="ie"
+        Command="http://www.abchina.com"
+        Parameter=""
+          
+          />
+
+  <SubSys ID="WebABC"
+      Name="农行内网"
+      Type="BS"
+      Core="ie"
+      Command="http://web.abc"
+      Parameter=""
+          
+          />
+   
+
+</Systems>

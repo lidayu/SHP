@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="ABC.EQUK.Control.TransactionButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Button Content="Button" Height="232" HorizontalAlignment="Left" Name="button1" VerticalAlignment="Top" Width="300" />
+        <Label Content="Label" Height="53" HorizontalAlignment="Center" Margin="0,239,0,0" Name="label1" VerticalAlignment="Center" Width="300" />
+    </Grid>
+</UserControl>
